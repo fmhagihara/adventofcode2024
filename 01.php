@@ -48,6 +48,7 @@ while (!feof($file)) {
     $first[] = $line[0];
     $second[] = str_replace("\n", "", $line[1]);
 }
+fclose($file);
 sort($first);
 sort($second);
 
